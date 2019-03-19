@@ -1,16 +1,20 @@
 ---
-layout: page
+layout: portfolio
 title: Projects
 ---
-<section class="list">
-    {% for post in site.posts %}
-        {% if post.projects %}
-            <div class="item {% if post.star %}star{% endif %}">
-                <a class="url" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">
-                    <aside><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %d %Y" }}</time></aside>
-                    <h3 class="title">{{ post.title }}</h3>
-                </a>
-            </div>
-        {% endif %}
+<div class="container">
+<div class="row">
+    {% for portfolio in site.portfolio %}
+    <div class="col-sm">
+	<div class="card" style="width: 20rem;">
+			<img class="card-img-top" src="{{ portfolio.imgurl }}" alt="Card image cap" style="height: 256px; width: 256px; display: block; margin-left: auto;margin-right: auto;">
+			<div class="card-body">
+			  <h5 class="card-title">{{ portfolio.title }}</h5>
+			  <p class="card-text">{{ portfolio.excerpt }}</p>
+			  <a href="{{ portfolio.url | prepend: site.baseurl }}" class="btn btn-primary">View Project</a>
+			</div>
+	</div>
+	</div>  
     {% endfor %}
-</section>
+</div>	
+</div>
