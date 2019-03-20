@@ -14,30 +14,32 @@ layout: compress
 <div class="container">
 
         <!-- Portfolio Item Heading -->
-        <h1 class="my-4">Page Heading
-          <small>Secondary Text</small>
+        <h1 class="my-4">{{ page.title }}
         </h1>
+        <hr>
       
         <!-- Portfolio Item Row -->
         <div class="row">
-      
-          <div class="col-md-8">
-            <img class="img-fluid" src="http://placehold.it/750x500" alt="">
+        {% for image in page.images %}
+          <div class="col-sm">
+            <img class="img-fluid" src="{{ image }}">
           </div>
-      
-          <div class="col-md-4">
-            <h3 class="my-3">Project Description</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-            <h3 class="my-3">Project Details</h3>
-            <ul>
-              <li>Lorem Ipsum</li>
-              <li>Dolor Sit Amet</li>
-              <li>Consectetur</li>
-              <li>Adipiscing Elit</li>
-            </ul>
-          </div>
-      
+        {% endfor %}
         </div>
+        <p> <small> <center> Screenshots of the application </center> </small> </p>
+        <h3 class="my-3">Project Description</h3>
+        <hr>
+        <p>{{ page.projectdescription }}</p>
+        <h3 class="my-3">Technology Stack</h3>
+        <hr>
+        <ul style="list-style-type:none;">
+            {% for item in page.technology_stack %}
+                <li> <i class="far fa-check-circle"></i> {{ item }} </li>
+            {% endfor %}
+        </ul>
+          
+      
+        
         <!-- /.row -->
       
       
