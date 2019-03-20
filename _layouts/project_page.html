@@ -15,13 +15,18 @@ layout: compress
 
         <!-- Portfolio Item Heading -->
         <h1 class="my-4">{{ page.title }}
+                <a href="{{page.gitlink}}"> <i class="fab fa-github"></i> </a>
+                {% if page.youtubelink %}
+                <a href="{{page.youtubelink}}"> <i class="fab fa-youtube"></i> </a>
+                {% endif %}
         </h1>
         <hr>
+        
       
         <!-- Portfolio Item Row -->
         <div class="row">
         {% for image in page.images %}
-          <div class="col-sm">
+          <div class="col-sm-4">
             <img class="img-fluid" src="{{ image }}">
           </div>
         {% endfor %}
@@ -29,13 +34,20 @@ layout: compress
         <p> <small> <center> Screenshots of the application </center> </small> </p>
         <h3 class="my-3">Project Description</h3>
         <hr>
-        <p>{{ page.projectdescription }}</p>
+        <p style="font-family: Comic Sans MS;">{{ page.projectdescription }}</p>
         <h3 class="my-3">Technology Stack</h3>
         <hr>
-        <ul style="list-style-type:none;">
+        <ul style="list-style-type:none; font-family: Comic Sans MS;">
             {% for item in page.technology_stack %}
                 <li> <i class="far fa-check-circle"></i> {{ item }} </li>
             {% endfor %}
+        </ul>
+        <h3 class="my-3">Awards & Recognition</h3>
+        <hr>
+        <ul style="list-style-type:none; font-family: Comic Sans MS;">
+        {% for item in page.awards %}
+                <li> <i class="fas fa-trophy"></i> {{ item }} </li>
+        {% endfor %}
         </ul>
           
       
