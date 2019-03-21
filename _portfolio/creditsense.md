@@ -2,7 +2,7 @@
 layout: project_page
 title: "Credit Sense"
 excerpt: "Decentralised intelligent credit scoring"
-imgurl: /assets/images/creditsense/cs.png
+imgurl: /assets/images/creditsense/model.png
 gitlink: https://github.com/piy0999/CreditSense
 youtubelink: https://youtu.be/ov2LHC7JzPA 
 images:
