@@ -2,7 +2,15 @@
 layout: compress
 ---
 
+{% include favicon.html %}
+
 {% include scripts.html %}
+
+{% if site.analytics-google %}
+        {% include analytics-google.html %}
+{% endif %}
+
+
 
 {% include nav.html %}
 
