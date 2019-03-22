@@ -34,24 +34,36 @@ layout: compress
         </div>
         
         <p> <small> <center> Screenshots of the application </center> </small> </p>
-        <h3 class="my-3">Project Description</h3>
+        <h3 class="my-3"> <i class="fas fa-th-list"></i> Project Description</h3>
         <hr>
         <p style="font-family: Comic Sans MS;">{{ page.projectdescription }}</p>
-        <h3 class="my-3">Technology Stack</h3>
+        <h3 class="my-3"> <i class="fas fa-laptop-code"></i> Technology Stack</h3>
         <hr>
         <ul style="list-style-type:none; font-family: Comic Sans MS;">
             {% for item in page.technology_stack %}
                 <li> <i class="far fa-check-circle"></i> {{ item }} </li>
             {% endfor %}
         </ul>
-        <h3 class="my-3">Awards & Recognition</h3>
+        <h3 class="my-3"><i class="fas fa-medal"></i>Awards & Recognition</h3>
         <hr>
         <ul style="list-style-type:none; font-family: Comic Sans MS;">
         {% for item in page.awards %}
                 <li> <i class="fas fa-trophy"></i> {{ item }} </li>
         {% endfor %}
         </ul>
-          
+        <h3 class="my-3"><i class="fas fa-users"></i>Team</h3>
+        <hr>
+        <p style="font-family: Comic Sans MS;"> {{page.teamdesc}} </p>
+        <ul style="list-style-type:none; font-family: Comic Sans MS;">
+                {% for team in page.team %}
+                    {% if team[1].link %}
+                        <li> <i class="fas fa-user"></i> <a href="{{ team[1].link }}">  {{ team[1].name }} </a> </li>
+                    {% else %}
+                    <li> <i class="fas fa-user"></i> {{ team[1].name }} </li>
+                    {% endif %}
+                {% endfor %}
+        </ul>
+
       
         
         <!-- /.row -->

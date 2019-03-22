@@ -2,15 +2,17 @@
 layout: portfolio
 title: Projects
 ---
-<p><center> <h1> Highlighted Projects </h1> </center></p>
+<p><center> <h1> Top Projects </h1> </center></p>
 <div class="container">
 <div class="row">
-    {% for portfolio in site.portfolio %}
+		{% assign sorted = site.portfolio | sort: 'date' | reverse %}
+    {% for portfolio in sorted %}
     <div class="col-sm-4">
 	<div class="card" style="width: 20rem;">
 			<img class="card-img-top" src="{{ portfolio.imgurl }}" alt="Card image cap" >
 			<div class="card-body">
 			  <h5 class="card-title">{{ portfolio.title }}</h5>
+			  <i class="far fa-calendar-alt"></i> {{portfolio.projectdate}} </br>
 			  <p class="card-text">{{ portfolio.excerpt }}</p>
 			  <a href="{{ portfolio.url | prepend: site.baseurl }}" class="btn btn-primary">View Project</a>
 			</div>
