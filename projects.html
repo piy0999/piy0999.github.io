@@ -8,9 +8,9 @@ title: Projects
 <div class="row">
 		{% assign sorted = site.portfolio | sort: 'date' | reverse %}
     {% for portfolio in sorted %}
-    <div class="col-sm-4">
+    <div class="col-sm-4" style="padding-top: 5px; padding-right: 5px; padding-bottom: 5px;padding-left: 5px;" >
 	<div class="card" style="width: 20rem;">
-			<img class="card-img-top" src="{{ portfolio.imgurl }}" alt="Card image cap" >
+			<img class="card-img-top" src="{{ portfolio.imgurl }}" style="padding-top: 5px; padding-right: 5px; padding-bottom: 5px;padding-left: 5px;" >
 			<div class="card-body">
 			  <h5 class="card-title">{{ portfolio.title }}</h5>
 			  <i class="far fa-calendar-alt"></i> {{portfolio.projectdate}} </br>

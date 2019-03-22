@@ -46,6 +46,7 @@ layout: compress
                 <li> <i class="far fa-check-circle"></i> {{ item }} </li>
             {% endfor %}
         </ul>
+        {% if page.awards %}
         <h3 class="my-3"><i class="fas fa-medal"></i>Awards & Recognition</h3>
         <hr>
         <ul style="list-style-type:none; font-family: Comic Sans MS;">
@@ -53,6 +54,7 @@ layout: compress
                 <li> <i class="fas fa-trophy"></i> {{ item }} </li>
         {% endfor %}
         </ul>
+        {% endif %}
         <h3 class="my-3"><i class="fas fa-users"></i>Team</h3>
         <hr>
         <p style="font-family: Comic Sans MS;"> {{page.teamdesc}} </p>

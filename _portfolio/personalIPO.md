@@ -4,8 +4,8 @@ title: "Personal IPO"
 excerpt: "Intelligent Personal Valuation (IPO) Platform"
 imgurl: /assets/images/personalipo/PIPO_main.png
 gitlink: https://github.com/WaqasAliAbbasi/Chengdu80-HKU
-projectdate: 04 Nov 2018
-date: 04 Nov 2018
+projectdate: 04 November 2018
+date: 04 November 2018
 images:
   - /assets/images/personalipo/Dashboard.png
   - /assets/images/personalipo/Invest.png

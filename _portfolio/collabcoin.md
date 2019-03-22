@@ -4,8 +4,8 @@ title: "Collabcoin"
 excerpt: "Decentralised Crowdsourced Investment Fund"
 imgurl: /assets/images/collabcoin/execution.png
 gitlink: https://github.com/waqasaliabbasi/CollabCoin
-projectdate: 03 Dec 2017
-date: 03 Dec 2017
+projectdate: 03 December 2017
+date: 03 December 2017
 images:
   - /assets/images/collabcoin/execution.png
   - /assets/images/collabcoin/hongkong_round.JPG
