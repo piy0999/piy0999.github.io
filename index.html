@@ -1,4 +1,30 @@
 ---
-layout: page
-title: Home
+layout: compress
+title: Home | Piyush Jha
 ---
+
+<title> {{page.title}} </title>
+<style>
+body{
+    background: url("/assets/images/background2.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+{% include scripts.html %}
+{% include nav.html %}
+<div class="container" style="padding-top: 5vw;">
+    <div class="row">
+        <div class="col">
+        </div>
+        <div class="col-6">
+            <center>
+                    {% include profilecard.html %}
+            </center>        
+        </div>
+        <div class="col">
+        </div>
+    </div>
+</div>
+
