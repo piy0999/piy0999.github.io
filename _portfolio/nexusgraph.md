@@ -11,7 +11,12 @@ images:
   - /assets/images/nexusgraph/nexus_webapp_search_form.png
   - /assets/images/nexusgraph/nexus_webapp_search_result.png
   - /assets/images/nexusgraph/nexusgraph_event.jpeg
-projectdescription: "NexusGraph is a visualisation tool creating relationship graphs utitlising data from linkedin, relevant websites and crawling thousands of relevant search results to identify potential clients for your company or clients who might be looking for financial services/investments. It takes a knowledge based AI approach to solve problems in the domain of private equity, investment, wealth management and even in marketing/promotions campaign to identify potential clients"
+projectdescription: "NexusGraph is a visualisation tool creating relationship graphs utitlising data from linkedin, relevant websites and crawling thousands of relevant search results to identify potential clients for your company or clients who might be looking for financial services/investments. It takes a knowledge based AI approach to solve problems in the domain of private equity, investment, wealth management and even in marketing/promotions campaign to identify potential clients </br>
+The Dataset for visualisation consists of: </br>
+1. The data of companies was taken from crunchbase.com </br>
+2. The data of investors of above companies from Bloomberg </br>
+3. News articles relating the companies and investors from crawling google search results </br> 
+"
 teamdesc: The project was developed by a team of 6 within 24 hours for Societe Generale FinHack
 technology_stack: 
   - Knowledge based AI model based on Keras and Tensorflow
