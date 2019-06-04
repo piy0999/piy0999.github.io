@@ -10,7 +10,7 @@ images:
   - /assets/images/fixit/fixit_1.png
   - /assets/images/fixit/fixit_2.png
   - /assets/images/fixit/fixit_3.png
-  - /assets/images/fixit/fixit_4.jpg
+  - /assets/images/fixit/fixit_4.png
   - /assets/images/fixit/fixit_5.png
   - /assets/images/fixit/fixit_6.png
   - /assets/images/fixit/fixit_7.png
